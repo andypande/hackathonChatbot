@@ -1,0 +1,5 @@
+applications:
+ - name: liveperson_watson_chatbot
+   random-route: true
+   memory: 128M
+   timeout: 200

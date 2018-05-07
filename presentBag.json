@@ -1,0 +1,59 @@
+{
+	"response":[
+	{
+		"type": "vertical",
+		"elements": [{
+			"type": "text",
+			"text": "Good news! We found 2 bags that may match your missing bag. ",
+			"tooltip": "text tooltip",
+			"style": {
+				"bold": true,
+				"size": "large"
+			}
+		},
+		{
+			"type": "text",
+			"text": "Please look carefully and select the photo of your missing bag. If you don't see it, please tap 'None of These'. ",
+			"tooltip": "text tooltip"
+		},
+		{
+			"type": "horizontal",
+			"elements": [{
+					"type": "image",
+					"url": "https://i.imgur.com/mwKcRNn.jpg",
+					"tooltip": "image tooltip",
+					"click": {
+						"actions": [{
+							"type": "publishText",
+							"text": "first bag"
+						}]
+					}
+				},
+				{
+					"type": "image",
+					"url": "https://i.imgur.com/SZHsXJD.jpg",
+					"tooltip": "image tooltip",
+					"click": {
+						"actions": [{
+							"type": "publishText",
+							"text": "second bag"
+						}]
+					}
+				}
+			]
+		},
+		{
+			"type": "button",
+			"tooltip": "button tooltip",
+			"title": "None of these",
+			"click": {
+				"actions": [{
+					"type": "publishText",
+					"text": "None of these"
+				}]
+			}
+		}
+		]
+	}
+	]
+}
